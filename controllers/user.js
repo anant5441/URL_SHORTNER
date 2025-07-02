@@ -21,7 +21,7 @@ async function handleUserLogin(req,res){
     const token = setUser(user);
     // res.cookie("uid",token); //we can cookie expire date and also specify domain
     res.cookie("token", token); // ✅ Set cookie named 'token'
-
+    
     return res.redirect("/");
 } 
 
